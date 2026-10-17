@@ -1,6 +1,69 @@
-body { font-family: system-ui, sans-serif; background: #8eddd7;
-       margin: 0; min-height: 100vh; display: grid; place-items: center; }
-.card { background: rgb(255, 229, 173); padding: 40px; border-radius: 18px;
-        box-shadow: 0 12px 32px #1e3a5f20; text-align: center; }
-button { background: #91e9ff; color: rgb(255, 251, 211); border: 0;
-         padding: 12px 22px; border-radius: 8px; cursor: pointer; }
+body {
+  font-family: system-ui, sans-serif;
+  background: #eef4fb;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px #1e3a5f20;
+  text-align: center;
+  max-width: 560px;
+  margin: 24px;
+}
+
+button {
+  background: #1769aa;
+  color: white;
+  border: 0;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button + button {
+  margin-left: 8px;
+}
+
+section {
+  margin-top: 24px;
+  text-align: left;
+}
+
+section h2 {
+  color: #1769aa;
+  border-bottom: 2px solid #eef4fb;
+  padding-bottom: 6px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a {
+  color: #1769aa;
+}
+
+/* Dark theme (toggled by script.js) */
+body.dark {
+  background: #14212e;
+}
+
+body.dark .card {
+  background: #1f2f40;
+  color: #f1f5f9;
+}
+
+body.dark section h2 {
+  color: #7cc0f0;
+  border-color: #2f4257;
+}
+
+body.dark a {
+  color: #7cc0f0;
+}
